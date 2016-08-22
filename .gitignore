@@ -16,7 +16,7 @@ Desktop.ini
 node_modules
 *.log
 *.gz
+.npmignore
 
 test/
 webpack.config.js
-

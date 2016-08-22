@@ -144,4 +144,6 @@
 
     return true;
   };
+
+  window.selfie = selfie;
 })();
