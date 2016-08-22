@@ -1,0 +1,19 @@
+{
+  "name": "selfie.js",
+  "version": "1.0.0",
+  "description": "Selfie with native Java Script.",
+  "main": "./selfie.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wonism/selfie.js.git"
+  },
+  "keywords": [
+    "selfie",
+    "javascript"
+  ],
+  "author": "Jaewon Kim <yocee57@gmail.com>",
+  "license": "MIT"
+}
