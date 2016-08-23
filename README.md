@@ -31,22 +31,22 @@ s.removePhoto(); // method to remove photo.
   - `downloadLinkText` - __(String)__ Set download link's text. Default is 'DOWNLOAD'.
   - `camera` - __(Object)__ It is 'Video Element' for displaying camera.
     - `id` - __(String)__ If you want to add ID to this node element, Specify it.
-    - `className` - __(String)__ If you want to add class to this node element, Specify it.
+    - `class` - __(String)__ If you want to add class to this node element, Specify it.
     - `activeClass` - __(String)__ If you want to add class to node element when it is activated, Specify it.
     - `unactiveClass` - __(String)__ If you want to add class to node element when it is unactivated, Specify it.
   - `store` - __(Object)__ It is 'Canvas Element' for save selfie temporarily.
     - `id` - __(String)__ If you want to add ID to this node element, Specify it.
-    - `className` - __(String)__ If you want to add class to this node element, Specify it.
+    - `class` - __(String)__ If you want to add class to this node element, Specify it.
     - `activeClass` - __(String)__ If you want to add class to node element when it is activated, Specify it.
     - `unactiveClass` - __(String)__ If you want to add class to node element when it is unactivated, Specify it.
   - `photo` - __(Object)__ It is 'Image Element' for displaying selfie taken.
     - `id` - __(String)__ If you want to add ID to this node element, Specify it.
-    - `className` - __(String)__ If you want to add class to this node element, Specify it.
+    - `class` - __(String)__ If you want to add class to this node element, Specify it.
     - `activeClass` - __(String)__ If you want to add class to node element when it is activated, Specify it.
     - `unactiveClass` - __(String)__ If you want to add class to node element when it is unactivated, Specify it.
   - `download` - __(Object)__ It is 'Anchor Element' for download selfie. It has 'download' attributes.
     - `id` - __(String)__ If you want to add ID to this node element, Specify it.
-    - `className` - __(String)__ If you want to add class to this node element, Specify it.
+    - `class` - __(String)__ If you want to add class to this node element, Specify it.
     - `activeClass` - __(String)__ If you want to add class to node element when it is activated, Specify it.
     - `unactiveClass` - __(String)__ If you want to add class to node element when it is unactivated, Specify it.
 
@@ -61,25 +61,25 @@ const options = {
     id: 'selfie-camera',
     activeClass: 'active',
     unactiveClass: 'none',
-    className: 'selfie-camera'
+    class: 'selfie-camera'
   },
   store: {
     id: 'selfie-store',
     activeClass: 'active',
     unactiveClass: 'none',
-    className: 'selfie-store'
+    class: 'selfie-store'
   },
   photo: {
     id: 'selfie-image',
     activeClass: 'active',
     unactiveClass: 'none',
-    className: 'selfie-image'
+    class: 'selfie-image'
   },
   download: {
     id: 'selfie-download',
     activeClass: 'active',
     unactiveClass: 'none',
-    className: 'selfie-download'
+    class: 'selfie-download'
   }
 };
 
