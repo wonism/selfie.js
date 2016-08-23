@@ -14,7 +14,7 @@ $ bower install selfie.js
 ```
 
 ```js
-let s = selfie.init(options);
+const s = selfie.init(options);
 s.takePhoto(); // method to take photo.
 s.removePhoto(); // method to remove photo.
 ```
@@ -40,7 +40,7 @@ s.removePhoto(); // method to remove photo.
 ## Example
 ```js
 // Set options. It is not necessary.
-let options = {
+const options = {
   target: document.getElementById('selfie-wrapper'),
   fileName: 'selfie',
   downloadLinkText: 'Click',
@@ -63,7 +63,7 @@ let options = {
 };
 
 // Initialize
-let s = selfie.init(options);
+const s = selfie.init(options);
 
 // take photo
 document.querySelector('SELFIE_SHUTTER_BUTTON').onclick = s.takePhoto();
