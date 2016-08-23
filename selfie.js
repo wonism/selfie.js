@@ -1,3 +1,18 @@
+/**
+ *
+ * title    : Selfie.js
+ *
+ * version  : 1.0.0
+ *
+ * author   : wonism
+ *
+ * license  : MIT
+ *
+ * homepage : https://jaewonism.cf
+ *
+ * github   : https://www.github.com/wonism
+ *
+ */
 ;(function () {
   var getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia;
 
@@ -8,20 +23,26 @@
 
       return _selfie || new Selfie(options);
     },
-    author: 'wonism'
+    author: 'wonism',
+    version: '1.0.0'
   };
 
   function Selfie(options) {
     _selfie = this;
 
     _selfie.options = options;
-    _selfie.camera = document.createElement((options.camera && options.camera.tag) || 'video');
-    _selfie.store = document.createElement((options.store && options.store.tag) || 'canvas');
+    _selfie.camera = document.createElement('video');
+    _selfie.store = document.createElement('canvas');
     _selfie.photo = document.createElement('img');
     _selfie.download = document.createElement('a');
 
-    _selfie.download.setAttribute('download', 'selfie.png');
-    _selfie.download.insertAdjacentHTML('beforeend', 'DOWNLOAD');
+    options.camera && options.camera.id && _selfie.camera.setAttribute('id', options.camera.id);
+    options.store && options.store.id && _selfie.store.setAttribute('id', options.store.id);
+    options.photo && options.photo.id && _selfie.photo.setAttribute('id', options.photo.id);
+    options.download && options.download.id && _selfie.download.setAttribute('id', options.download.id);
+
+    _selfie.download.setAttribute('download', (options.fileName || 'selfie') + '.png');
+    _selfie.download.insertAdjacentHTML('beforeend', options.downloadLinkText || 'DOWNLOAD');
 
     _selfie.setup();
   }
