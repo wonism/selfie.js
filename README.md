@@ -7,6 +7,11 @@ __bower__
 $ bower install selfie.js
 ```
 
+__npm__
+```sh
+$ bower install selfie.js
+```
+
 ## How to use
 ```html
 <!-- add selfie.js -->
@@ -19,23 +24,31 @@ s.takePhoto(); // method to take photo.
 s.removePhoto(); // method to remove photo.
 ```
 
-## Options (Optional)
+## Options (Everything is optional. Not necessary)
 - `option` - __(Object)__
   - `target` - __(Object)__ It shoud be 'Node Element'. Its default value is `document.body`.
   - `fileName` - __(String)__ Set file's name. Default is 'selfie' and file extension is png.
   - `downloadLinkText` - __(String)__ Set download link's text. Default is 'DOWNLOAD'.
   - `camera` - __(Object)__ It is 'Video Element' for displaying camera.
-    - `id` - __(String)__ If you want to add id to node element display camera, Specify it.
-    - `className` - __(String)__ If you want to add class to node element display camera, Specify it.
+    - `id` - __(String)__ If you want to add ID to this node element, Specify it.
+    - `className` - __(String)__ If you want to add class to this node element, Specify it.
+    - `activeClass` - __(String)__ If you want to add class to node element when it is activated, Specify it.
+    - `unactiveClass` - __(String)__ If you want to add class to node element when it is unactivated, Specify it.
   - `store` - __(Object)__ It is 'Canvas Element' for save selfie temporarily.
-    - `id` - __(String)__ If you want to add id to node element save selfie, Specify it.
-    - `className` - __(String)__ If you want to add class to node element save selfie, Specify it.
+    - `id` - __(String)__ If you want to add ID to this node element, Specify it.
+    - `className` - __(String)__ If you want to add class to this node element, Specify it.
+    - `activeClass` - __(String)__ If you want to add class to node element when it is activated, Specify it.
+    - `unactiveClass` - __(String)__ If you want to add class to node element when it is unactivated, Specify it.
   - `photo` - __(Object)__ It is 'Image Element' for displaying selfie taken.
-    - `id` - __(String)__ If you want to add id to node element display selfie, Specify it.
-    - `className` - __(String)__ If you want to add class to node element display selfie, Specify it.
+    - `id` - __(String)__ If you want to add ID to this node element, Specify it.
+    - `className` - __(String)__ If you want to add class to this node element, Specify it.
+    - `activeClass` - __(String)__ If you want to add class to node element when it is activated, Specify it.
+    - `unactiveClass` - __(String)__ If you want to add class to node element when it is unactivated, Specify it.
   - `download` - __(Object)__ It is 'Anchor Element' for download selfie. It has 'download' attributes.
-    - `id` - __(String)__ If you want to add id to node element download selfie, Specify it.
-    - `className` - __(String)__ If you want to add class to node element download selfie, Specify it.
+    - `id` - __(String)__ If you want to add ID to this node element, Specify it.
+    - `className` - __(String)__ If you want to add class to this node element, Specify it.
+    - `activeClass` - __(String)__ If you want to add class to node element when it is activated, Specify it.
+    - `unactiveClass` - __(String)__ If you want to add class to node element when it is unactivated, Specify it.
 
 ## Example
 ```js
@@ -46,18 +59,26 @@ const options = {
   downloadLinkText: 'Click',
   camera: {
     id: 'selfie-camera',
+    activeClass: 'active',
+    unactiveClass: 'none',
     className: 'selfie-camera'
   },
   store: {
     id: 'selfie-store',
+    activeClass: 'active',
+    unactiveClass: 'none',
     className: 'selfie-store'
   },
   photo: {
     id: 'selfie-image',
+    activeClass: 'active',
+    unactiveClass: 'none',
     className: 'selfie-image'
   },
   download: {
     id: 'selfie-download',
+    activeClass: 'active',
+    unactiveClass: 'none',
     className: 'selfie-download'
   }
 };
