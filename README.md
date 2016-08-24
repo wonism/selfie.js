@@ -87,10 +87,10 @@ const options = {
 const s = selfie.init(options);
 
 // take photo
-document.querySelector('SELFIE_SHUTTER_BUTTON').onclick = s.takePhoto();
+document.querySelector('SELFIE_SHUTTER_BUTTON').onclick = s.takePhoto;
 
 // remove photo
-document.querySelector('REMOVE_SELFIE').onclick = s.removePhoto();
+document.querySelector('REMOVE_SELFIE').onclick = s.removePhoto;
 ```
 
 ## Licence
